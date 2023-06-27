@@ -14,6 +14,7 @@ export default function EmojiPickerInput(){
             <input ref={refInput}/>
             <button onClick={handleClick}>😀</button>
             <EmojiPicker/>
+            <div>Mansaje para probar el push</div>
         </div>
     )
 }
