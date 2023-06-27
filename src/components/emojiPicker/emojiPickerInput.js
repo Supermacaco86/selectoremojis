@@ -5,16 +5,10 @@ export default function EmojiPickerInput(){
 
     const refInput = useRef(null);
 
-    function handleClick(){
-        refInput.current.focus()
-    }
-
     return (
         <div>
             <input ref={refInput}/>
-            <button onClick={handleClick}>😀</button>
-            <EmojiPicker/>
-            <div>Mansaje para probar el push</div>
+            <EmojiPicker ref={refInput}/>
         </div>
     )
 }
