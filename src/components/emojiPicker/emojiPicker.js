@@ -39,6 +39,7 @@ export function EmojiPicker(props, inputRef){
     // }
 
     return <div>
+        <div>Prueva git hub</div>
         <button onClick={handleClickOpen}>😀</button>
         {isOpen? (
              <div>
