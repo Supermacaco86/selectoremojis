@@ -1,4 +1,5 @@
 import { useState } from "react"
+import styles from "./emojiPicker.module.scss"
 
 export default function EmojiSearch({onSearche}){
     const [value, setValue] = useState("")
@@ -8,5 +9,5 @@ export default function EmojiSearch({onSearche}){
         onSearche(e)
     }
 
-    return <input type="text" onChange = {handleChange} value={value} />
+    return <input className={styles.search} type="text" onChange = {handleChange} value={value} />
 }
